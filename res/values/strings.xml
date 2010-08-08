@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SICalculator!</string>
+    <string name="app_name">Simple Interest Calculator</string>
+    <string name="principal">Principal</string>
+    <string name="rate">Rate Of Interest</string>
+    <string name="period">Period</string>
+</resources>

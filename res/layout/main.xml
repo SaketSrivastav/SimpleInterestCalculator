@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/LinearLayout01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="vertical" 
+		android:background="@drawable/simpleinterest1"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<TextView android:text="@string/app_name" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal" 
+				android:id="@+id/title"
+				android:textStyle="bold|italic"
+				android:textSize="20dp"
+				android:textColor="#000000">
+	</TextView>	
+	
+	<LinearLayout android:id="@+id/LinearLayout02" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="25dp"
+		>
+		
+		<TextView android:text="@string/principal"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/TextPrincipal"
+			android:textSize="20dp"
+			>
+		</TextView>
+		
+		<EditText android:id="@+id/pAmount" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:width="100dp" 
+			android:height="15dp"
+			android:layout_marginLeft="95dp"
+			android:inputType="numberDecimal"
+			>			
+		</EditText>
+		
+		</LinearLayout>
+	 
+	 <LinearLayout android:id="@+id/LinearLayout03" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_marginLeft="25dp"
+	 >
+		<TextView android:text="@string/rate"  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:id="@+id/textRate"
+			android:textSize="20dp"
+			>
+		</TextView>
+		
+		<EditText android:id="@+id/rate" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:width="100dp" 
+			android:height="15dp"
+			android:layout_marginLeft="28dp"
+			android:inputType="numberDecimal"
+			>			
+		</EditText>
+		
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/LinearLayout04" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_marginLeft="25dp">
+		
+			<TextView android:text="@string/period"  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/textPeriod"
+				android:textSize="20dp">
+			</TextView>
+			
+			<EditText android:id="@+id/period" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:width="100dp" 
+				android:height="15dp"
+				android:layout_marginLeft="113dp"
+				android:inputType="numberDecimal"
+				>			
+			</EditText>  
+		</LinearLayout> 
+		
+		<LinearLayout android:id="@+id/LinearLayout05" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_marginRight="20dp"
+			android:layout_gravity="center"
+		>
+		<!-- 
+			<Button android:id="@+id/buttonCalculate"
+				android:text="Calulate Interest"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="113dp"
+			>
+			</Button>
+		 -->
+		<Button android:text="Result"
+			android:id="@+id/box" 
+			android:layout_width="120dp" 
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="113dp">
+		</Button>
+		
+</LinearLayout>
+		
+		<LinearLayout android:id="@+id/LinearLayout06" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:orientation="horizontal"
+		>
+			<TextView android:text="Simple Interest = "  
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/textSimpleIntrest"
+				android:textSize="20dp"
+				android:visibility="invisible"
+				android:textColor="#000000"
+				>
+			</TextView>
+			
+			<TextView android:id="@+id/textSI"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:visibility="invisible"
+				android:maxLength="7"
+				android:textSize="20dp"
+				android:textColor="#000000">
+			</TextView>
+		
+		</LinearLayout>
+</LinearLayout>
